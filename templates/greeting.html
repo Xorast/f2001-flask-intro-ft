@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+
+    {% for name in names %}
+        
+        {% if name=="Marc" %}
+            <p>Are you in the class?</p>
+        {% else %}
+            <p>Hi {{ name }}!</p>
+        {% endif %}
+
+    {% endfor %}
+
+{% endblock %}
+
+{% block banana %}
+    <p>Some text that I want there</p>
+{% endblock %}
+
+
+{% block anotherrandomname %}
+    <script>document.getElementById("demo").innerHTML = "Hello JavaScript!";</script>
+{% endblock %}
